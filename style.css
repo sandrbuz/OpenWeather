@@ -3,11 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  width: 1080px;
+}
 .section-1 {
+  display: flex;
+  justify-content: space-between;
   background: #8ae0e0;
   height: 40vh;
 }
 .section-2 {
   height: 50vh;
   background: #ecf22b;
+}
+.section-3 {
+  height: 10vh;
+
+  background: #8ae0e0;
+}
+#icon {
+  height: 350px;
+  width: 800px;
+}
+.place {
+  display: flex;
 }

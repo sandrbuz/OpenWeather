@@ -3,11 +3,13 @@ let btnGet = document.querySelector('.btn');
 
 const getWeather = (cityName) => {
     if (cityName) {
-
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=655fdcf1aed1280abf8e870e95b28149`)
+
             .then(resp => resp.json())
             .then(data => {
-
+                console.log(data);
+                let val = `https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
+                $('#icon').attr('src', val);
             })
             .catch(function () {
 
