@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   display: flex;
@@ -19,11 +20,19 @@ body {
   right: 11%;
   border-radius: 10px;
 }
-.load {
-  position: absolute;
-  margin: auto;
-  font-size: 40px;
+.load-text {
+  /* position: absolute;
+  top: 40%;
+  right: 45%;
+  bottom: 0; */
+  font-size: 60px;
   color: white;
+}
+.load {
+  display: flex;
+}
+.fountainG {
+  margin: 0;
 }
 .container-s1 {
   border: 1px solid red;
