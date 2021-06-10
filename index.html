@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forecast</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
@@ -33,6 +33,7 @@
            <div class="container-s1">
             <div class="left-wr1">
               <div class="inp-btn">
+                <div class="city-name-error">Not found</div>
                 <input list="slct" class='inp address' placeholder="Enter city" type="text">
                 <datalist id='slct'>
                   <option>Moscow
@@ -42,6 +43,7 @@
               </datalist>
               <button class="btn">&#128269;</button>
               </div>
+             
               <div class="place">
                 <div class="city">Moscow</div>
                 <div class="comma">,</div>
