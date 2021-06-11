@@ -3,19 +3,35 @@ let btnGet = document.querySelector('.btn');
 
 const getWeather = (cityName) => {
     if (cityName) {
+
+
+        document.querySelector('.filter').style.display = 'block';
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=655fdcf1aed1280abf8e870e95b28149`)
 
             .then(resp => resp.json())
             .then(data => {
                 console.log(data);
+                document.querySelector('.city-name-error').textContent = '';
+
+                document.querySelector('.filter').style.display = 'none';
+
+
+
+                document.querySelector('.city').textContent = data.name;
+                document.querySelector('.country').textContent = data.sys.country;
+                document.querySelector('.weather').textContent = data.weather[0]['description'];
+
+
+
                 let val = `https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
                 $('#icon').attr('src', val);
             })
             .catch(function () {
-
+                document.querySelector('.city-name-error').textContent = 'Not found';
             })
     }
     else {
+        document.querySelector('.city-name-error').textContent = 'Bad request';
 
     }
 }

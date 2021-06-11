@@ -48,11 +48,12 @@ body {
   width: 1200px;
 }
 .city-name-error {
-  color: red;
+  color: #ff8c00;
   font-size: 13px;
+  font-weight: bold;
   position: relative;
   top: 27px;
-  left: 130px;
+  left: 110px;
 }
 .inp {
   color: rgb(58, 58, 58);
@@ -61,6 +62,7 @@ body {
   border: blanchedalmond;
   width: 200px;
   height: 30px;
+  padding-left: 8px;
 }
 .btn {
   cursor: pointer;
