@@ -21,13 +21,22 @@ const getWeather = (cityName) => {
                 document.querySelector('.country').textContent = data.sys.country;
                 document.querySelector('.weather').textContent = data.weather[0]['description'];
 
+                if (cityName.length > 13) {
+                    document.querySelector('.city').style.fontSize = '30px';
+                    document.querySelector('.city').style.marginTop = '30px';
+                } else {
+                    document.querySelector('.city').style.fontSize = '60px';
+                    document.querySelector('.city').style.marginTop = '0px';
 
+                }
 
                 let val = `https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
                 $('#icon').attr('src', val);
             })
             .catch(function () {
+
                 document.querySelector('.city-name-error').textContent = 'Not found';
+
             })
     }
     else {
