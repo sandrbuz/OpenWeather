@@ -51,6 +51,9 @@ body {
   color: #ff8c00;
   font-size: 13px;
   font-weight: bold;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 8px;
 }
 .inp {
   color: rgb(58, 58, 58);
@@ -106,6 +109,20 @@ body {
 .section-2 {
   height: 500px;
   background: #ecf22b;
+}
+.container-s2 {
+  border: 1px solid red;
+  border-bottom: none;
+  border-top: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  color: #333333;
+}
+.temp {
+  font-size: 230px;
+  font-weight: bold;
 }
 .section-3 {
   height: 86px;
