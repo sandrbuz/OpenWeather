@@ -121,7 +121,7 @@ body {
   color: #333333;
 }
 .temp {
-  margin-bottom: 50px;
+  /* padding-bottom: 50px; */
   font-size: 230px;
   font-weight: bold;
 }
@@ -150,10 +150,59 @@ body {
 .right-wr2 {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  /* margin: auto 0; */
 }
 .details-title {
   font-size: 50px;
   font-weight: bold;
+  /* margin-bottom: -5px; */
+  margin-top: 20px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.feel {
+  display: flex;
+}
+.feels-like {
+  margin-right: 50px;
+}
+.feel-value {
+  font-weight: bold;
+}
+.wind-text {
+  margin-right: 125px;
+}
+.wind-value {
+  font-weight: bold;
+}
+.hum {
+  margin-right: 52px;
+}
+.hum-value {
+  font-weight: bold;
+}
+.press {
+  margin-right: 62px;
+}
+.press-value {
+  font-weight: bold;
+}
+.wind {
+  display: flex;
+}
+.humidity {
+  display: flex;
+}
+.pressure {
+  display: flex;
+}
+.item {
+  margin: 5px 0;
 }
 
 .section-3 {
