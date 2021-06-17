@@ -16,6 +16,11 @@ const getWeather = (cityName) => {
                 document.querySelector('.filter').style.display = 'none';
 
 
+                document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&#8451;';
+                document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like - 273) + '&#8451;';
+                document.querySelector('.wind-value').innerHTML = data.wind.speed + ' m/s';
+                document.querySelector('.hum-value').innerHTML = data.main.humidity + '%';
+                document.querySelector('.press-value').innerHTML = data.main.pressure + ' hPa';
 
                 document.querySelector('.city').textContent = data.name;
                 document.querySelector('.country').textContent = data.sys.country;
