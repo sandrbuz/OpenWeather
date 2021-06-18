@@ -1,4 +1,6 @@
 let btnGet = document.querySelector('.btn');
+let btnFahr = document.querySelector('.fahr');
+let btnCels = document.querySelector('.cels');
 
 
 const getWeather = (cityName) => {
@@ -37,6 +39,27 @@ const getWeather = (cityName) => {
 
                 let val = `https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
                 $('#icon').attr('src', val);
+
+
+                btnCels.disabled = true;
+                btnFahr.disabled = false;
+
+                btnFahr.addEventListener('click', function () {
+                    document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + '&#8457;';
+                    btnFahr.disabled = true;
+                    btnCels.disabled = false;
+                    document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like) + '&#8451;';
+
+                });
+                btnCels.addEventListener('click', function () {
+                    document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&#8451;';
+                    btnCels.disabled = true;
+                    btnFahr.disabled = false;
+                    document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like - 273) + '&#8451;';
+
+
+
+                });
             })
             .catch(function () {
 
