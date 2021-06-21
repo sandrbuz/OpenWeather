@@ -276,9 +276,31 @@ body {
     width: 300px;
   }
   .right-wr2 {
-    margin-right: 40px;
+    /* margin-right: 40px; */
   }
   .time {
     margin-right: 150px;
+  }
+  #icon {
+    width: 200px;
+    height: 200px;
+    /* margin-left: -200px; */
+  }
+  .left-wr1 {
+    /* margin-left: 200px; */
+  }
+  .container-s1 {
+    width: 750px;
+    margin-top: 70px;
+    margin-left: -100px;
+  }
+  .container-s2 {
+    width: 750px;
+  }
+  .container-s3 {
+    width: 750px;
+  }
+  .icon {
+    width: 1px;
   }
 }
