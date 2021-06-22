@@ -89,7 +89,7 @@ body {
 #icon {
   height: 450px;
   width: 450px;
-  margin-right: 100px;
+  margin-right: 150px;
 }
 .place {
   display: flex;
@@ -302,5 +302,74 @@ body {
   }
   .icon {
     width: 1px;
+  }
+}
+
+@media (max-width: 750px) {
+  .temp {
+    font-size: 70px;
+    margin-top: 100px;
+  }
+  .details-title {
+    font-size: 30px;
+  }
+  .details {
+    font-size: 20px;
+  }
+  .wind-value {
+    margin-left: -37px;
+  }
+  .line {
+    width: 220px;
+  }
+  .press-value {
+    margin-left: -10px;
+  }
+  .right-wr2 {
+    margin-top: 80px;
+  }
+  .city,
+  .comma,
+  .country {
+    font-size: 40px !important;
+  }
+
+  /* .comma,
+  .country {
+    margin-top: 23px;
+  } */
+  .weather {
+    font-size: 30px;
+  }
+  .time {
+    font-size: 20px;
+  }
+  .container-s1,
+  .container-s2,
+  .container-s3 {
+    width: 600px;
+  }
+  .container-s1 {
+    margin-left: 0;
+  }
+}
+@media (max-width: 700px) {
+  .container-s1 {
+    width: 500px;
+    margin-left: 50px;
+  }
+  .right-wr2 {
+    /* margin-bottom: 40px; */
+  }
+}
+@media (max-width: 650px) {
+  .icon {
+    display: none;
+  }
+  .left-wr1 {
+    margin: auto auto;
+  }
+  .weather {
+    margin: auto auto;
   }
 }
