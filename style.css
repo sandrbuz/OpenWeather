@@ -108,7 +108,7 @@ body {
 }
 .section-2 {
   height: 500px;
-  background: #ecf22b;
+  background: linear-gradient(#edf327, #dff431);
 }
 .container-s2 {
   margin: 0 auto;
@@ -301,6 +301,18 @@ body {
 }
 
 @media (max-width: 750px) {
+  .weather {
+    margin-left: -50px;
+  }
+  .left-wr1 {
+    text-align: center;
+  }
+  .country {
+    margin: auto 0;
+  }
+  .comma {
+    margin: auto 0;
+  }
   .temp {
     font-size: 70px;
     margin-top: 50px;
@@ -355,12 +367,18 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .country {
+    margin-top: 31px;
+  }
+  .comma {
+    margin-top: 31px;
+  }
   .icon {
     display: none;
   }
   .left-wr1 {
     margin: 0 auto;
-    margin-top: -40px;
+    margin-top: -57px;
   }
   .weather {
     margin: auto auto;
@@ -374,7 +392,6 @@ body {
   .left-wr2 {
     flex-direction: row-reverse;
     margin: auto auto;
-
   }
   .btns {
     margin-top: 20px;
@@ -392,5 +409,30 @@ body {
   }
   .section-1 {
     height: 250px;
+  }
+  .section-2 {
+    background: url(/bg-s2.jpg) no-repeat;
+    background-size: cover;
+  }
+  .feels-like {
+    font-weight: bold;
+  }
+  .wind-text {
+    font-weight: bold;
+  }
+  .humidity {
+    display: none;
+  }
+  .press {
+    font-weight: bold;
+  }
+  .feel-value {
+    font-weight: normal;
+  }
+  .wind-value {
+    font-weight: normal;
+  }
+  .press-value {
+    font-weight: normal;
   }
 }
