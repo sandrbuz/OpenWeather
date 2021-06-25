@@ -20,6 +20,7 @@ body {
   top: 11%;
   right: 11%;
   border-radius: 10px;
+  z-index: 10;
 }
 .load-text {
   /* position: absolute;
@@ -301,11 +302,18 @@ body {
 }
 
 @media (max-width: 750px) {
+  .load {
+    margin-left: 25%;
+  }
   .weather {
+    margin-left: -50px;
+  }
+  .inp {
     margin-left: -50px;
   }
   .left-wr1 {
     text-align: center;
+    /* text-align: left; */
   }
   .country {
     margin: auto 0;
@@ -367,6 +375,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  /* .city {
+    padding-top: 30px;
+  } */
   .country {
     margin-top: 31px;
   }

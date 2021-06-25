@@ -13,6 +13,9 @@ const getWeather = (cityName) => {
             .then(resp => resp.json())
             .then(data => {
                 console.log(data);
+
+
+
                 document.querySelector('.city-name-error').textContent = '';
 
                 document.querySelector('.filter').style.display = 'none';
@@ -60,6 +63,24 @@ const getWeather = (cityName) => {
 
 
                 });
+
+
+                // if (window.innerWidth < 650) {
+                //     if (cityName.length < 10) {
+                //         document.querySelector('.city').style.paddingTop = '30px';
+
+                //     }
+
+                // }
+                // else {
+                //     if (window.innerWidth > 650) {
+                //         if (cityName.length < 10) {
+                //             document.querySelector('.city').style.paddingTop = '-30px';
+
+                //         }
+                //     }
+                // }
+
             })
             .catch(function () {
 
