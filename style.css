@@ -94,7 +94,7 @@ body {
 }
 .place {
   display: flex;
-  color: #ffffff;
+  color: #f3f3fb;
   font-weight: bold;
   font-size: 60px;
 }
@@ -375,21 +375,21 @@ body {
   }
 }
 @media (max-width: 650px) {
-  /* .city {
-    padding-top: 30px;
-  } */
-  .country {
+  .city {
+    margin-top: 0px !important;
+  }
+  /* .country {
     margin-top: 31px;
   }
   .comma {
     margin-top: 31px;
-  }
+  } */
   .icon {
     display: none;
   }
   .left-wr1 {
     margin: 0 auto;
-    margin-top: -57px;
+    /* margin-top: -57px; */
   }
   .weather {
     margin: auto auto;
@@ -399,6 +399,7 @@ body {
   }
   .right-wr2 {
     margin: auto auto;
+    margin-top: 100px;
   }
   .left-wr2 {
     flex-direction: row-reverse;
@@ -409,6 +410,9 @@ body {
   }
   .details-title {
     display: none;
+  }
+  .details {
+    font-size: 30px;
   }
   .line {
     display: none;
@@ -442,8 +446,19 @@ body {
   }
   .wind-value {
     font-weight: normal;
+    padding-left: 23px;
   }
   .press-value {
     font-weight: normal;
+  }
+  @media (max-height: 740px) {
+    .left-wr1 {
+      margin-top: -57px;
+    }
+  }
+  @media (max-height: 640px) {
+    .right-wr2 {
+      /* margin-top: -40px; */
+    }
   }
 }

@@ -3,6 +3,7 @@ let btnFahr = document.querySelector('.fahr');
 let btnCels = document.querySelector('.cels');
 
 
+
 const getWeather = (cityName) => {
     if (cityName) {
 
@@ -66,6 +67,7 @@ const getWeather = (cityName) => {
 
 
                 // if (window.innerWidth < 650) {
+
                 //     if (cityName.length < 10) {
                 //         document.querySelector('.city').style.paddingTop = '30px';
 
@@ -73,13 +75,23 @@ const getWeather = (cityName) => {
 
                 // }
                 // else {
-                //     if (window.innerWidth > 650) {
-                //         if (cityName.length < 10) {
-                //             document.querySelector('.city').style.paddingTop = '-30px';
 
-                //         }
+
+                //     document.querySelector('.city').style.color = 'red';
+
+
+
+                // }
+
+
+
+                // const citi = document.querySelector('.city');
+                // if (window.matchMedia('(max-width: 650px)').matches) {
+                //     if (citi.length < 10) {
+                //         document.querySelector('.city').stylу.color = 'red';
                 //     }
                 // }
+
 
             })
             .catch(function () {
@@ -114,3 +126,5 @@ userInput.onkeypress = function (event) {
         getWeather(cityName)
     }
 }
+
+
