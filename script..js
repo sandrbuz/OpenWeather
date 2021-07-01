@@ -85,13 +85,6 @@ const getWeather = (cityName) => {
 
 
 
-                // const citi = document.querySelector('.city');
-                // if (window.matchMedia('(max-width: 650px)').matches) {
-                //     if (citi.length < 10) {
-                //         document.querySelector('.city').stylу.color = 'red';
-                //     }
-                // }
-
 
             })
             .catch(function () {
