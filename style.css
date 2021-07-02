@@ -293,6 +293,9 @@ body {
 }
 
 @media (max-width: 750px) {
+  .btn {
+    margin-top: 4px;
+  }
   .load {
     margin-left: 25%;
   }
@@ -361,6 +364,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .load-text {
+    margin-left: -70px;
+  }
   .section-1 {
     height: 250px !important;
   }
