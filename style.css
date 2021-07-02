@@ -23,10 +23,6 @@ body {
   z-index: 10;
 }
 .load-text {
-  /* position: absolute;
-  top: 40%;
-  right: 45%;
-  bottom: 0; */
   font-size: 60px;
   color: white;
 }
@@ -77,8 +73,6 @@ body {
 .left-wr1 {
   display: flex;
   flex-direction: column;
-  /* line-height: 100px; */
-  /* justify-content: space-around; */
   margin: auto auto;
   margin-right: 230px;
 }
@@ -98,10 +92,7 @@ body {
   font-weight: bold;
   font-size: 60px;
 }
-/* .city {
-  font-size: 30px;
-  margin-top: 30px;
-} */
+
 .weather {
   font-size: 40px;
   font-weight: 600;
@@ -155,7 +146,6 @@ body {
 .details-title {
   font-size: 50px;
   font-weight: bold;
-  /* margin-bottom: -5px; */
   margin-top: 20px;
 }
 .details {
@@ -203,9 +193,7 @@ body {
 .item {
   margin: 5px 0;
 }
-/* .cels {
-  color: #807d7d;
-} */
+
 .section-3 {
   height: 86px;
 
@@ -286,7 +274,6 @@ body {
   #icon {
     width: 200px;
     height: 200px;
-    /* margin-left: -200px; */
   }
 
   .container-s1 {
@@ -317,7 +304,6 @@ body {
   }
   .left-wr1 {
     text-align: center;
-    /* text-align: left; */
   }
   .country {
     margin: auto 0;
@@ -353,10 +339,6 @@ body {
     font-size: 40px !important;
   }
 
-  /* .comma,
-  .country {
-    margin-top: 23px;
-  } */
   .weather {
     font-size: 30px;
   }
@@ -385,18 +367,12 @@ body {
   .city {
     margin-top: 0px !important;
   }
-  /* .country {
-    margin-top: 31px;
-  }
-  .comma {
-    margin-top: 31px;
-  } */
+
   .icon {
     display: none;
   }
   .left-wr1 {
     margin: 0 auto;
-    /* margin-top: -57px; */
   }
   .weather {
     margin: auto auto;
@@ -468,7 +444,6 @@ body {
   }
   @media (max-height: 640px) {
     .left-wr2 {
-      /* margin-top: -40px; */
       margin-bottom: -70px;
     }
     .right-wr2 {
@@ -573,7 +548,7 @@ body {
     margin-left: 10px;
   }
   .left-wr1 {
-    margin-right: -10px;
+    margin-right: 20px;
   }
   .temp {
     font-size: 60px;
@@ -601,9 +576,18 @@ body {
   .temp {
     font-size: 50px;
   }
+  .left-wr1 {
+    margin-right: 37px;
+  }
   @media (max-height: 640px) {
     .right-wr2 {
       margin-top: 180px !important;
+    }
+    .left-wr2 {
+      margin-top: 50px;
+    }
+    .details {
+      margin-top: -50px;
     }
   }
   @media (max-height: 580px) {
@@ -655,26 +639,3 @@ body {
     font-size: 20px;
   }
 }
-
-/* ------------------------------------------------------ */
-/* @media (max-width: 3000px) {
-  @media (max-height: 1800px) {
-    .section-1 {
-      height: 40vh;
-    }
-    .section-2 {
-      height: 50vh;
-    }
-    .section-3 {
-      height: 10vh;
-    }
-  }
-}
-
-@media (max-width: 360px) {
-  @media (max-height: 740px) {
-    .details {
-      margin-top: -50px;
-    }
-  }
-} */
