@@ -486,6 +486,11 @@ body {
   .container-s1 {
     margin-left: 0;
   }
+  .load-text {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: -50px;
+  }
 }
 @media (max-width: 450px) {
   .left-wr2 {
@@ -550,6 +555,12 @@ body {
   }
 }
 @media (max-width: 350px) {
+  .load-text {
+    display: none;
+  }
+  .load {
+    margin-left: 50px;
+  }
   .inp-btn {
     margin-left: 10px;
   }
@@ -616,6 +627,12 @@ body {
   }
 }
 @media (max-width: 300px) {
+  .inp {
+    margin-left: -20px !important;
+  }
+  .load {
+    margin-left: 30px;
+  }
   .city,
   .comma,
   .country {
@@ -624,6 +641,7 @@ body {
   .left-wr1 {
     padding-left: 10px;
     margin: 0 !important;
+    margin-top: -40px !important;
   }
   .container-s1 {
     width: 270px;

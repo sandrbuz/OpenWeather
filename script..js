@@ -19,7 +19,7 @@ const getWeather = (cityName) => {
 
                 document.querySelector('.city-name-error').textContent = '';
 
-                // document.querySelector('.filter').style.display = 'none';
+                document.querySelector('.filter').style.display = 'none';
 
 
                 document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&#8451;';
