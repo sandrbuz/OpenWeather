@@ -84,7 +84,34 @@ const getWeather = (cityName) => {
                 // }
 
 
+                // ----------------------------------------------------------------------------
+                // current time
+                d = new Date();
+                localTime = d.getTime();
+                localOffset = d.getTimezoneOffset() * 60000;
+                utc = localTime + localOffset;
+                var cit = utc + (1000 * data.timezone);
 
+                var date = new Date(cit);
+                var h, m, s;
+                h = date.getHours();
+                m = date.getMinutes();
+                mth = date.getMonth();
+                d = date.getDate();
+
+                let arrMonth = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                let mo = arrMonth[mth];
+
+                if (m < 10) {
+                    var correct_date = h + ':' + '0' + m + ' ' + mo + ' ' + d;
+                } else {
+                    var correct_date = h + ':' + m + ' ' + mo + ' ' + d;
+                }
+
+                document.querySelector('.time').innerHTML = correct_date;
+
+
+                // ------------------------------------------------------------------------
 
             })
             .catch(function () {

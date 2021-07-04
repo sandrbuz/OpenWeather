@@ -51,24 +51,29 @@ body {
 }
 .inp {
   color: rgb(58, 58, 58);
-  background: rgb(220, 219, 219);
+  /* background: rgb(220, 219, 219); */
+  background: #f3f3fb;
   border-radius: 10px 0px 0px 10px;
   border: blanchedalmond;
   width: 200px;
   height: 30px;
   padding-left: 8px;
   margin-right: -2px;
+  margin-top: 3px;
+  /* box-shadow: inset 7px 0.1px 7px 0.01px rgb(151, 150, 150); */
 }
 
 .btn {
   position: absolute;
   cursor: pointer;
-  background: rgb(220, 219, 219);
+  /* background: rgb(220, 219, 219); */
+  background: #f3f3fb;
   border-radius: 0px 10px 10px 0;
   border: blanchedalmond;
   width: 50px;
   height: 30px;
   margin-top: 3px;
+  /* box-shadow: inset -10px 0.1px 7px 0.01px rgb(151, 150, 150); */
 }
 .left-wr1 {
   display: flex;
@@ -293,9 +298,9 @@ body {
 }
 
 @media (max-width: 750px) {
-  .btn {
+  /* .btn {
     margin-top: 4px;
-  }
+  } */
   .load {
     margin-left: 25%;
   }
