@@ -61,9 +61,11 @@ body {
   margin-right: -2px;
   margin-top: 3px;
   /* box-shadow: inset 7px 0.1px 7px 0.01px rgb(151, 150, 150); */
+  box-shadow: inset 1px 0px 5px rgb(157, 156, 156);
 }
 
 .btn {
+  /* box-shadow: inset -1px 0px 5px rgb(157, 156, 156); */
   position: absolute;
   cursor: pointer;
   /* background: rgb(220, 219, 219); */
@@ -146,7 +148,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* margin: auto 0; */
+  /* position: absolute !important; */
+  /* margin-right: -700px; */
 }
 .details-title {
   font-size: 50px;
