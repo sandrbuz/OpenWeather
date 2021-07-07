@@ -65,22 +65,18 @@ const getWeather = (cityName) => {
                 });
 
 
-                // if (window.innerWidth < 650) {
+                // if (window.innerWidth < 350) {
 
-                //     if (cityName.length < 10) {
-                //         document.querySelector('.city').style.paddingTop = '30px';
+                //     if (cityName = 'Saint Petersburg') {
+                //         document.querySelector('.city').style.color = 'red';
+
+                //     } else {
+                //         document.querySelector('.city').style.color = 'green';
 
                 //     }
 
                 // }
-                // else {
 
-
-                //     document.querySelector('.city').style.color = 'red';
-
-
-
-                // }
 
 
                 // ----------------------------------------------------------------------------
