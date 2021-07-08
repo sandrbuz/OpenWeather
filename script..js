@@ -63,6 +63,13 @@ const getWeather = (cityName) => {
 
 
                 });
+                //     if (chbox.checked) {
+                //         alert('Выбран');
+                //     }
+                //     else {
+                //         alert ('Не выбран');
+                //     }
+                // }
 
 
                 // if (window.innerWidth < 350) {
