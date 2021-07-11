@@ -657,7 +657,7 @@ body {
     margin-right: 50px !important;
   }
   .temp {
-    background: #ffdb4d;
+    /* background: #ffdb4d; */
   }
   .container-s1 {
     width: 270px;
@@ -687,6 +687,7 @@ switcher */
   display: inline-block;
   width: 60px;
   height: 34px;
+  color: white;
 }
 
 /* Hide default HTML checkbox */
@@ -702,7 +703,7 @@ switcher */
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #333333;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -720,11 +721,11 @@ switcher */
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #333333;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #9fd4ff;
 }
 
 input:checked + .slider:before {
@@ -736,7 +737,7 @@ input:checked + .slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
-  padding-left: 5px;
+  padding-left: 6px;
 }
 
 .slider.round:before {

@@ -64,15 +64,32 @@ const getWeather = (cityName) => {
 
                 //     });
                 //     ---------------------------------------------------
-                const chb = document.querySelector('.chbox')
-                if (chb.checked) {
-                    alert('Выбран');
-                }
-                else {
-                    alert('Не выбран');
-                }
+                // function gradus() {
+                // const chb = document.querySelector('.chbox')
+                // if (chb.checked) {
+                //     alert('Выбран');
+                //     document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + '&#8457;';
 
+                // }
+                // else {
+                //     document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&#8451;';
 
+                //     alert('Не выбран');
+                // }
+                // }
+                //   ---------------------------------------------------
+                $(":checkbox").change(function () {
+                    if (this.checked) {
+                        document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + '&#8457;';
+                        document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like) + '&#8457';
+
+                    } else {
+                        document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&#8451;';
+                        document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like - 273) + '&#8451;';
+
+                    }
+                });
+                //    ----------------------------------------------------------- 
                 // if (window.innerWidth < 350) {
 
                 //     if (cityName = 'Saint Petersburg') {
