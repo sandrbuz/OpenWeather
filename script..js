@@ -44,39 +44,7 @@ const getWeather = (cityName) => {
                 let val = `https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
                 $('#icon').attr('src', val);
 
-                //   ---------------------------------------------------
-                //     btnCels.disabled = true;
-                //     btnFahr.disabled = false;
 
-                //     btnFahr.addEventListener('click', function () {
-                //         document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + '&#8457;';
-                //         btnFahr.disabled = true;
-                //         btnCels.disabled = false;
-                //         document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like) + '&#8451';
-                //     });
-                //     btnCels.addEventListener('click', function () {
-                //         document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&#8451;';
-                //         btnCels.disabled = true;
-                //         btnFahr.disabled = false;
-                //         document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like - 273) + '&#8451;';
-
-
-
-                //     });
-                //     ---------------------------------------------------
-                // function gradus() {
-                // const chb = document.querySelector('.chbox')
-                // if (chb.checked) {
-                //     alert('Выбран');
-                //     document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + '&#8457;';
-
-                // }
-                // else {
-                //     document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&#8451;';
-
-                //     alert('Не выбран');
-                // }
-                // }
                 //   ---------------------------------------------------
                 $(":checkbox").change(function () {
                     if (this.checked) {
@@ -90,6 +58,7 @@ const getWeather = (cityName) => {
                     }
                 });
                 //    ----------------------------------------------------------- 
+                // ask Joseph
                 // if (window.innerWidth < 350) {
 
                 //     if (cityName = 'Saint Petersburg') {
