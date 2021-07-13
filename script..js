@@ -129,6 +129,7 @@ const getWeather = (cityName) => {
                 }
 
                 document.querySelector('.time').innerHTML = correct_date;
+                document.querySelector('.time-s1').innerHTML = correct_date;
 
 
                 // ------------------------------------------------------------------------

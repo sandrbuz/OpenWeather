@@ -12,6 +12,12 @@ body {
 }
 .time-s1 {
   display: none;
+  /* margin-right: 150px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right; */
 }
 .line-s1 {
   display: none;
@@ -419,10 +425,12 @@ body {
   .line {
     display: none;
   }
-  .time {
+
+  .time-s1 {
     margin: 0;
     text-align: center;
     margin-top: 5px;
+    color: #ffffff;
   }
   .section-1 {
     height: 250px;
