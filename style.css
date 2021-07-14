@@ -114,7 +114,7 @@ body {
 .container-s2 {
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 1200px;
   color: #333333;
 }
@@ -128,10 +128,12 @@ body {
   margin-top: 50px;
   margin-bottom: -30px;
 }
+
 .left-wr2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 555px;
 }
 .line {
   background-color: #7eded6;
@@ -298,6 +300,21 @@ body {
   .icon {
     width: 1px;
   }
+  .temp {
+    font-size: 120px;
+  }
+  .feel-value {
+    font-size: 25px;
+  }
+  .wind-value {
+    font-size: 25px;
+  }
+  .hum-value {
+    font-size: 25px;
+  }
+  .press-value {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -309,6 +326,7 @@ body {
   }
   .inp {
     margin-left: -50px;
+    margin-bottom: 3px;
   }
   .left-wr1 {
     text-align: center;
@@ -339,6 +357,11 @@ body {
     margin-left: -7px;
   }
   .right-wr2 {
+    margin-top: 50px;
+    margin-left: -100px;
+  }
+  .left-wr2 {
+    margin-left: -100px;
     margin-top: 50px;
   }
   .city,
@@ -398,6 +421,7 @@ body {
   .left-wr2 {
     flex-direction: row-reverse;
     margin: auto auto;
+    width: 300px;
   }
   .btns {
     margin-top: 20px;
@@ -467,6 +491,9 @@ body {
     border: none;
     width: 50px;
   }
+  .inp {
+    margin-bottom: 3px;
+  }
   @media (max-height: 740px) {
     .left-wr1 {
       margin-top: -1px !important;
@@ -493,6 +520,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .switch {
+    margin-left: 50px;
+  }
   @media (max-height: 640px) {
     .right-wr2 {
       margin-top: 170px;
@@ -527,11 +557,11 @@ body {
 @media (max-width: 450px) {
   .left-wr2 {
     margin-left: 0;
-    margin-left: 20px;
+    margin-left: 60px;
   }
-  .btns {
-    margin-left: 90px;
-  }
+  /* .btns {
+    margin-left: 10px;
+  } */
   .right-wr2 {
     margin-left: 0;
     margin-left: 20px;
@@ -582,11 +612,12 @@ body {
   .details {
     font-size: 25px;
   }
-  .btns {
-    margin-left: 40px;
-  }
+
   .city-name-error {
     margin-left: 70px;
+  }
+  .left-wr2 {
+    margin-left: 15px;
   }
 }
 @media (max-width: 350px) {
@@ -623,6 +654,9 @@ body {
   .press-value {
     margin-left: -11px;
   }
+  .left-wr2 {
+    margin-left: -10px;
+  }
 }
 @media (max-width: 320px) {
   .temp {
@@ -636,7 +670,7 @@ body {
       margin-top: 180px !important;
     }
     .left-wr2 {
-      margin-top: 50px;
+      margin-top: 10px;
     }
     .details {
       margin-top: -50px;
@@ -699,6 +733,9 @@ body {
   }
   .details {
     font-size: 20px;
+  }
+  .left-wr2 {
+    margin-left: -40px;
   }
 }
 /*switcher */
