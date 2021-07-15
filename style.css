@@ -64,7 +64,6 @@ body {
   height: 30px;
   padding-left: 8px;
   margin-right: -2px;
-  margin-top: 3px;
   box-shadow: inset 3px 0px 4px rgb(157, 156, 156);
 }
 
@@ -523,6 +522,9 @@ body {
   .switch {
     margin-left: 50px;
   }
+  .btn {
+    margin-top: 4px;
+  }
   @media (max-height: 640px) {
     .right-wr2 {
       margin-top: 170px;
@@ -559,9 +561,6 @@ body {
     margin-left: 0;
     margin-left: 60px;
   }
-  /* .btns {
-    margin-left: 10px;
-  } */
   .right-wr2 {
     margin-left: 0;
     margin-left: 20px;
