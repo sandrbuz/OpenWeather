@@ -21,10 +21,10 @@ body {
   position: absolute;
   background-color: black;
   opacity: 0.5;
-  width: 80vw;
-  height: 80vh;
-  top: 11%;
-  right: 11%;
+  width: 99vw;
+  height: 99vh;
+  top: 1%;
+  right: 1%;
   border-radius: 10px;
   z-index: 10;
 }
