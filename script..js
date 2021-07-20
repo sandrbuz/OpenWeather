@@ -9,7 +9,7 @@ const getWeather = (cityName) => {
 
 
         document.querySelector('.filter').style.display = 'block';
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=655fdcf1aed1280abf8e870e95b28149`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=655fdcf1aed1280abf8e870e95b28149`)
 
             .then(resp => resp.json())
             .then(data => {
@@ -41,11 +41,13 @@ const getWeather = (cityName) => {
 
                 }
 
-                let val = `https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
+                let val = `http://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
                 $('#icon').attr('src', val);
 
 
                 //   ---------------------------------------------------
+                // document.querySelector('.chbox').checked = "true";
+
                 $(":checkbox").change(function () {
                     if (this.checked) {
                         document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + '&#8457;';
