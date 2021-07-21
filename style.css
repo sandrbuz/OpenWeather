@@ -489,7 +489,9 @@ body {
     border: none;
     width: 50px;
   }
-
+  .inp {
+    margin-top: 4px;
+  }
   @media (max-height: 740px) {
     .left-wr1 {
       margin-top: -1px !important;
