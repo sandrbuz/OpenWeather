@@ -64,7 +64,6 @@ body {
   height: 30px;
   padding-left: 8px;
   margin-right: -2px;
-  box-shadow: inset 3px 0px 4px rgb(157, 156, 156);
 }
 
 .btn {
@@ -75,7 +74,7 @@ body {
   border: blanchedalmond;
   width: 50px;
   height: 30px;
-  box-shadow: inset -3px 0px 4px rgb(157, 156, 156);
+  box-shadow: inset 1px 0px 0px rgb(157, 156, 156);
 }
 .left-wr1 {
   display: flex;
@@ -422,7 +421,9 @@ body {
     flex-direction: column;
   }
   .right-wr2 {
-    margin: auto auto;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
     margin-top: 100px;
   }
   .left-wr2 {
@@ -644,13 +645,13 @@ body {
     margin-left: 50px;
   }
   .inp-btn {
-    margin-right: 20px !important;
+    margin-right: -50px !important;
   }
   .place {
-    margin-right: 20px;
+    margin-left: 70px;
   }
   .weather {
-    margin-right: 51px;
+    margin-left: 51px;
   }
   .line-s1 {
     margin-right: 110px;
@@ -696,9 +697,6 @@ body {
   }
   .left-wr1 {
     margin-right: 50px;
-  }
-  .inp-btn {
-    margin-left: 60px;
   }
   .place {
     margin-left: 60px;
@@ -748,7 +746,7 @@ body {
 }
 @media (max-width: 300px) {
   .inp {
-    /* margin-left: -23px; */
+    /* margin-left: 23px; */
     /* margin-right: -15px; */
     width: 190px;
   }
@@ -760,7 +758,7 @@ body {
     margin-left: 60px;
   }
   .inp-btn {
-    margin-left: 5px !important;
+    margin-left: -30px;
   }
   .place {
     margin-left: 25px;
