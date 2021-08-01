@@ -1,127 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forecast</title>
-    <link rel="icon" href="/ic.png">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forecast</title>
+  <link rel="icon" href="/ic.png">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-          
-         <div class="filter">
-          <div class="load">
-            <div class="load-text">Loading</div>
-            <div id="fountainG">
-             <div id="fountainG_1" class="fountainG"></div>
-             <div id="fountainG_2" class="fountainG"></div>
-             <div id="fountainG_3" class="fountainG"></div>
-             <div id="fountainG_4" class="fountainG"></div>
-             <div id="fountainG_5" class="fountainG"></div>
-             <div id="fountainG_6" class="fountainG"></div>
-             <div id="fountainG_7" class="fountainG"></div>
-             <div id="fountainG_8" class="fountainG"></div>
-           </div>
+
+  <div class="filter">
+    <div class="load">
+      <div class="load-text">Loading</div>
+      <div id="fountainG">
+        <div id="fountainG_1" class="fountainG"></div>
+        <div id="fountainG_2" class="fountainG"></div>
+        <div id="fountainG_3" class="fountainG"></div>
+        <div id="fountainG_4" class="fountainG"></div>
+        <div id="fountainG_5" class="fountainG"></div>
+        <div id="fountainG_6" class="fountainG"></div>
+        <div id="fountainG_7" class="fountainG"></div>
+        <div id="fountainG_8" class="fountainG"></div>
+      </div>
+    </div>
+    <!-- load -->
+  </div>
+  <!-- filter -->
+  <div class="section-1">
+    <div class="container-s1">
+      <div class="left-wr1">
+        <div class="inp-btn">
+          <div class="city-name-error"></div>
+          <input list="slct" class='inp address' placeholder="Enter city" type="text">
+          <datalist id='slct'>
+              <option>Moscow
+              <option>Spain
+              <option>Tel Aviv
+              <option>New York
+              <option>Saint Petersburg
+          </datalist>
+          <button class="btn-get">&#128269;</button>
+        </div>
+
+        <div class="place">
+          <div class="city"></div>
+          <div class="comma">,</div>
+          <div class="country"></div>
+        </div>
+        <div class="weather"></div>
+      </div>
+      <div class="right-wr1">
+        <div class="icon"> <img id="icon"></div>
+      </div>
+      <hr class="line-s1">
+      <!-- right-wr1 -->
+      <div class="time-s1"></div>
+    </div>
+    <!-- container-s1 -->
+  </div>
+  <!-- section-1 -->
+  <div class="section-2">
+    <div class="container-s2">
+      <div class="left-wr2">
+        <div class="btns">
+          <label class="switch">
+            <input type="checkbox" class='chbox'>
+            <span class="slider round"> &#8451; &#8457;</span>
+          </label>
+        </div>
+        <div class="temp">
+        </div>
+      </div>
+      <!-- left-wr2 -->
+      <div class="right-wr2">
+        <div class="details-title">Details</div>
+        <hr class="line">
+        <div class="details">
+          <div class=" item feel">
+            <div class="feels-like">Feels like</div>
+            <div class="feel-value"></div>
           </div>
-          <!-- load -->
-         </div>
-         <!-- filter -->
-          <div class="section-1">
-           <div class="container-s1">
-            <div class="left-wr1">
-              <div class="inp-btn">
-                <div class="city-name-error"></div>
-                <input list="slct" class='inp address' placeholder="Enter city" type="text">
-                <datalist id='slct'>
-                  <option>Moscow
-                 <option>Spain
-                  <option>Tel Aviv
-                  <option>New York
-              </datalist>
-              <button class="btn">&#128269;</button>
-              </div>
-             
-              <div class="place">
-                <div class="city"></div>
-                <div class="comma">,</div>
-                <div class="country"></div>
-              </div>
-              <div class="weather"></div>
-            </div>
-            <div class="right-wr1">
-              <div class="icon"> <img id="icon"></div>
-            </div>
-            <hr class="line-s1">
-            <!-- right-wr1 -->
-            <div class="time-s1"></div>
-           </div>
-            <!-- container-s1 -->
+          <!-- feel -->
+          <div class=" item wind">
+            <div class="wind-text">Wind</div>
+            <div class="wind-value"></div>
           </div>
-          <!-- section-1 -->
-          <div class="section-2">
-              <div class="container-s2">
-                <div class="left-wr2">
-                 <div class="btns">
-                  <label class="switch">
-                    <input type="checkbox" class='chbox'>
-                    <span class="slider round"> &#8451; &#8457;</span>
-                  </label>
-                 </div>
-                  <div class="temp">
-                  </div>
-                </div>
-                <!-- left-wr2 -->
-                <div class="right-wr2">
-                  <div class="details-title">Details</div>
-                  <hr class="line">
-                <div class="details">
-                  <div class=" item feel">
-                    <div class="feels-like">Feels like</div>
-                    <div class="feel-value"></div>
-                  </div>
-                  <!-- feel -->
-                  <div class=" item wind">
-                    <div class="wind-text">Wind</div>
-                    <div class="wind-value"></div>
-                  </div>
-                  <!-- wind -->
-                  <div class=" item humidity">
-                     <div class="hum">Humidity</div>
-                     <div class="hum-value"></div>
-                  </div>
-                  <!-- hum -->
-                  <div class=" item pressure">
-                    <div class="press">Pressure</div>
-                    <div class="press-value"></div>
-                  </div>
-                  <!-- pressure -->
-                </div>
-                <!-- details -->
-                 
-                </div>
-                 <!-- right-wr2 -->
-              </div>
-              <!-- container-s2 -->
+          <!-- wind -->
+          <div class=" item humidity">
+            <div class="hum">Humidity</div>
+            <div class="hum-value"></div>
           </div>
-          <!-- section-2 -->
-          <div class="section-3">
-               <div class="container-s3">
-                <div class="time"></div>
-               </div>
-               <!-- container-s3 -->
+          <!-- hum -->
+          <div class=" item pressure">
+            <div class="press">Pressure</div>
+            <div class="press-value"></div>
           </div>
-          <!-- section-3 -->
-         
-           
-     <script
-     src="https://code.jquery.com/jquery-3.6.0.min.js"
-     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-     crossorigin="anonymous"></script>
-   <script src="script..js"></script>
+          <!-- pressure -->
+        </div>
+        <!-- details -->
+
+      </div>
+      <!-- right-wr2 -->
+    </div>
+    <!-- container-s2 -->
+  </div>
+  <!-- section-2 -->
+  <div class="section-3">
+    <div class="container-s3">
+      <div class="time"></div>
+    </div>
+    <!-- container-s3 -->
+  </div>
+  <!-- section-3 -->
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script..js"></script>
 </body>
+
 </html>

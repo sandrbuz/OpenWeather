@@ -66,7 +66,7 @@ body {
   margin-right: -2px;
 }
 
-.btn {
+.btn-get {
   position: absolute;
   cursor: pointer;
   background: #f3f3fb;
@@ -535,7 +535,7 @@ body {
   .switch {
     margin-left: 50px;
   }
-  .btn {
+  .btn-get {
     margin-top: 4px;
   }
   @media (max-height: 640px) {
@@ -605,6 +605,7 @@ body {
   .comma,
   .country {
     font-size: 30px !important;
+    line-height: 1em;
   }
   .feel-value {
     margin-left: 20px;
@@ -651,7 +652,7 @@ body {
     margin-left: 70px;
   }
   .weather {
-    margin-left: 51px;
+    margin-left: 81px;
   }
   .line-s1 {
     margin-right: 110px;
@@ -700,10 +701,12 @@ body {
   }
   .place {
     margin-left: 60px;
+    margin-top: 12px;
   }
   .weather {
-    margin-left: 80px;
+    margin-left: 110px;
     font-size: 20px;
+    margin-top: 12px;
   }
   .line-s1 {
     margin-left: 130px;
@@ -750,7 +753,7 @@ body {
     /* margin-right: -15px; */
     width: 190px;
   }
-  .btn {
+  .btn-get {
     margin-left: 2px !important;
     /* left: 73%; */
   }

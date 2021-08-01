@@ -1,77 +1,85 @@
-let btnGet = document.querySelector('.btn');
-let btnFahr = document.querySelector('.fahr');
-let btnCels = document.querySelector('.cels');
+let btnGet = document.querySelector(".btn-get");
+let btnFahr = document.querySelector(".fahr");
+let btnCels = document.querySelector(".cels");
 
-
+const BASE_URL = 'https://api.openweathermap.org';
+const API_KEY = '655fdcf1aed1280abf8e870e95b28149';
 
 const getWeather = (cityName) => {
     if (cityName) {
+        document.querySelector(".filter").style.display = "block";
+        fetch(
+            `${BASE_URL}/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
+        )
+            .then((resp) => resp.json())
+            .then((data) => {
+                document.querySelector(".city-name-error").textContent = "";
+                document.querySelector(".filter").style.display = "none";
 
+                document.querySelector(".temp").innerHTML =
+                    Math.round(data.main.temp - 273) + "&#8451;";
+                document.querySelector(".feel-value").innerHTML =
+                    Math.round(data.main.feels_like - 273) + "&#8451;";
+                document.querySelector(".wind-value").innerHTML =
+                    data.wind.speed + " m/s";
+                document.querySelector(".hum-value").innerHTML =
+                    data.main.humidity + "%";
+                document.querySelector(".press-value").innerHTML =
+                    data.main.pressure + " hPa";
 
-        document.querySelector('.filter').style.display = 'block';
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=655fdcf1aed1280abf8e870e95b28149`)
-
-            .then(resp => resp.json())
-            .then(data => {
-                console.log(data);
-
-
-
-                document.querySelector('.city-name-error').textContent = '';
-
-                document.querySelector('.filter').style.display = 'none';
-
-
-                document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&#8451;';
-                document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like - 273) + '&#8451;';
-                document.querySelector('.wind-value').innerHTML = data.wind.speed + ' m/s';
-                document.querySelector('.hum-value').innerHTML = data.main.humidity + '%';
-                document.querySelector('.press-value').innerHTML = data.main.pressure + ' hPa';
-
-                document.querySelector('.city').textContent = data.name;
-                document.querySelector('.country').textContent = data.sys.country;
-                document.querySelector('.weather').textContent = data.weather[0]['description'];
+                document.querySelector(".city").textContent = data.name;
+                document.querySelector(".country").textContent = data.sys.country;
+                document.querySelector(".weather").textContent = data.weather[0]["description"];
 
                 if (cityName.length > 13) {
-                    document.querySelector('.city').style.fontSize = '30px';
-                    document.querySelector('.city').style.marginTop = '30px';
+                    document.querySelector(".city").style.fontSize = "30px";
+                    document.querySelector(".city").style.marginTop = "30px";
                 } else {
-                    document.querySelector('.city').style.fontSize = '60px';
-                    document.querySelector('.city').style.marginTop = '0px';
-
+                    document.querySelector(".city").style.fontSize = "60px";
+                    document.querySelector(".city").style.marginTop = "0px";
                 }
 
-                let val = `http://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
-                $('#icon').attr('src', val);
-
+                let val = `http://openweathermap.org/img/wn/${data.weather[0]["icon"]}@2x.png`;
+                $("#icon").attr("src", val);
 
                 //   ---------------------------------------------------
                 // document.querySelector('.chbox').checked = "true";
 
                 $(":checkbox").change(function () {
                     if (this.checked) {
-                        document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + '&#8457;';
-                        document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like) + '&#8457';
-
+                        document.querySelector(".temp").innerHTML =
+                            Math.round(data.main.temp) + "&#8457;";
+                        document.querySelector(".feel-value").innerHTML =
+                            Math.round(data.main.feels_like) + "&#8457";
                     } else {
-                        document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&#8451;';
-                        document.querySelector('.feel-value').innerHTML = Math.round(data.main.feels_like - 273) + '&#8451;';
-
+                        document.querySelector(".temp").innerHTML =
+                            Math.round(data.main.temp - 273) + "&#8451;";
+                        document.querySelector(".feel-value").innerHTML =
+                            Math.round(data.main.feels_like - 273) + "&#8451;";
                     }
                 });
-                //    ----------------------------------------------------------- 
-                // ask Joseph
-                // if (window.innerWidth < 350) {
 
-                //     if (cityName = 'Saint Petersburg') {
-                //         document.querySelector('.city').style.color = 'red';
+
+
+                //    -----------------------------------------------------------
+                // ask Joseph
+
+
+
+                // if (window.outerWidth < 350) {
+
+                //     if (cityName.indexOf(' ') >= 0 && cityName.length > 12) {
+                //         document.querySelector('.city').style.fontSize = '10px !important';
 
                 //     } else {
-                //         document.querySelector('.city').style.color = 'green';
+                //         document.querySelector('.city').style.fontSize = '30px';
 
                 //     }
 
                 // }
+
+
+
 
 
 
@@ -81,7 +89,7 @@ const getWeather = (cityName) => {
                 localTime = d.getTime();
                 localOffset = d.getTimezoneOffset() * 60000;
                 utc = localTime + localOffset;
-                var cit = utc + (1000 * data.timezone);
+                var cit = utc + 1000 * data.timezone;
 
                 var date = new Date(cit);
                 var h, m, s;
@@ -90,52 +98,55 @@ const getWeather = (cityName) => {
                 mth = date.getMonth();
                 d = date.getDate();
 
-                let arrMonth = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                let arrMonth = [
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                    "Apr",
+                    "May",
+                    "Jun",
+                    "Jul",
+                    "Aug",
+                    "Sep",
+                    "Oct",
+                    "Nov",
+                    "Dec",
+                ];
                 let mo = arrMonth[mth];
 
                 if (m < 10) {
-                    var correct_date = h + ':' + '0' + m + ' ' + mo + ' ' + d;
+                    var correct_date = h + ":" + "0" + m + " " + mo + " " + d;
                 } else {
-                    var correct_date = h + ':' + m + ' ' + mo + ' ' + d;
+                    var correct_date = h + ":" + m + " " + mo + " " + d;
                 }
 
-                document.querySelector('.time').innerHTML = correct_date;
-                document.querySelector('.time-s1').innerHTML = correct_date;
-
+                document.querySelector(".time").innerHTML = correct_date;
+                document.querySelector(".time-s1").innerHTML = correct_date;
 
                 // ------------------------------------------------------------------------
-
             })
             .catch(function () {
-
-                document.querySelector('.city-name-error').textContent = 'Not found';
-
-            })
+                document.querySelector(".city-name-error").textContent = "Not found";
+            });
+    } else {
+        document.querySelector(".city-name-error").textContent = "Bad request";
     }
-    else {
-        document.querySelector('.city-name-error').textContent = 'Bad request';
-
-    }
-}
+};
 
 // default city
-getWeather('Moscow');
+getWeather("Moscow");
 
 // On btnGet
-let userInput = document.querySelector('.inp');
-btnGet.addEventListener('click', function () {
+let userInput = document.querySelector(".inp");
+btnGet.addEventListener("click", function () {
     const cityName = userInput.value;
-    getWeather(cityName)
-
-})
-
+    getWeather(cityName);
+});
 
 // on key Press (Enter)
 userInput.onkeypress = function (event) {
-
-    if (event.key == 'Enter') {
+    if (event.key == "Enter") {
         const cityName = userInput.value;
-        getWeather(cityName)
+        getWeather(cityName);
     }
-}
-
+};
