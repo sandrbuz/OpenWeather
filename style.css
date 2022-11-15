@@ -10,12 +10,15 @@ body {
   flex-direction: column;
   max-height: 100vh;
 }
+
 .time-s1 {
   display: none;
 }
+
 .line-s1 {
   display: none;
 }
+
 .filter {
   display: none;
   position: absolute;
@@ -28,25 +31,30 @@ body {
   border-radius: 10px;
   z-index: 10;
 }
+
 .load-text {
   font-size: 60px;
   color: white;
 }
+
 .load {
   display: flex;
   margin-left: 35%;
   margin-top: 20%;
 }
+
 #fountainG {
   margin: 0;
   margin-top: 55px;
 }
+
 .container-s1 {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 1200px;
 }
+
 .city-name-error {
   color: #ff8c00;
   font-size: 13px;
@@ -55,6 +63,7 @@ body {
   margin-left: 108px;
   margin-top: 8px;
 }
+
 .inp {
   color: rgb(58, 58, 58);
   background: #f3f3fb;
@@ -76,6 +85,7 @@ body {
   height: 30px;
   box-shadow: inset 1px 0px 0px rgb(157, 156, 156);
 }
+
 .left-wr1 {
   display: flex;
   flex-direction: column;
@@ -87,11 +97,13 @@ body {
   background: linear-gradient(to top, #88e0e0, #aeebeb);
   height: 454px;
 }
+
 #icon {
   height: 450px;
   width: 450px;
   margin-right: 150px;
 }
+
 .place {
   display: flex;
   color: #f3f3fb;
@@ -104,10 +116,12 @@ body {
   font-weight: 600;
   color: #ffffff;
 }
+
 .section-2 {
   height: 500px;
   background: linear-gradient(#edf327, #dff431);
 }
+
 .container-s2 {
   margin: 0 auto;
   display: flex;
@@ -115,11 +129,13 @@ body {
   width: 1200px;
   color: #333333;
 }
+
 .temp {
   font-size: 200px;
   font-weight: bold;
   margin-top: 30px;
 }
+
 .btns {
   display: flex;
   margin-top: 50px;
@@ -132,12 +148,14 @@ body {
   align-items: center;
   width: 555px;
 }
+
 .line {
   background-color: #7eded6;
   height: 3px;
   width: 500px;
   border: none;
 }
+
 .cels,
 .fahr {
   background: none;
@@ -145,58 +163,74 @@ body {
   cursor: pointer;
   font-size: 30px;
 }
+
 .right-wr2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .details-title {
   font-size: 50px;
   font-weight: bold;
   margin-top: 20px;
 }
+
 .details {
   display: flex;
   flex-direction: column;
   font-size: 40px;
   margin-bottom: 30px;
 }
+
 .feel {
   display: flex;
 }
+
 .feels-like {
   margin-right: 50px;
 }
+
 .feel-value {
   font-weight: bold;
 }
+
 .wind-text {
   margin-right: 125px;
 }
+
 .wind-value {
   font-weight: bold;
 }
+
 .hum {
   margin-right: 52px;
 }
+
 .hum-value {
   font-weight: bold;
 }
+
 .press {
   margin-right: 62px;
 }
+
 .press-value {
   font-weight: bold;
 }
+
 .wind {
   display: flex;
 }
+
 .humidity {
   display: flex;
 }
+
 .pressure {
   display: flex;
 }
+
 .item {
   margin: 5px 0;
 }
@@ -206,11 +240,13 @@ body {
 
   background: linear-gradient(to top, #66d8d8, #9ee5e5);
 }
+
 .container-s3 {
   margin: 0 auto;
   width: 1200px;
   color: #333333;
 }
+
 .time {
   margin-right: 150px;
   margin-top: 10px;
@@ -219,9 +255,11 @@ body {
   font-weight: bold;
   text-align: right;
 }
+
 .country {
   margin-left: 20px;
 }
+
 @media (max-width: 1200px) {
   #icon {
     height: 450px;
@@ -229,57 +267,73 @@ body {
     margin-right: 50px;
     margin-left: -150px;
   }
+
   .temp {
     font-size: 150px;
   }
+
   .container-s1 {
     width: 1000px;
   }
+
   .container-s2 {
     width: 1000px;
   }
+
   .container-s3 {
     width: 1000px;
   }
 }
+
 @media (max-width: 1000px) {
   .right-wr2 {
     margin-top: 30px;
   }
+
   .container-s1 {
     width: 900px;
   }
+
   .container-s2 {
     width: 900px;
   }
+
   .container-s3 {
     width: 900px;
   }
+
   .details {
     font-size: 30px;
   }
+
   .line {
     width: 350px;
   }
+
   #icon {
     width: 400px;
     height: 400px;
     margin-right: 40px;
   }
+
   .time {
     margin-right: 60px;
   }
+
   .wind-value {
     margin-left: -18px;
   }
 }
+
 @media (max-width: 900px) {
   .line {
     width: 300px;
   }
+
   .time {
     margin-right: 150px;
   }
+
   #icon {
     width: 200px;
     height: 200px;
@@ -290,27 +344,35 @@ body {
     margin-top: 70px;
     margin-left: -100px;
   }
+
   .container-s2 {
     width: 750px;
   }
+
   .container-s3 {
     width: 750px;
   }
+
   .icon {
     width: 1px;
   }
+
   .temp {
     font-size: 120px;
   }
+
   .feel-value {
     font-size: 25px;
   }
+
   .wind-value {
     font-size: 25px;
   }
+
   .hum-value {
     font-size: 25px;
   }
+
   .press-value {
     font-size: 25px;
   }
@@ -320,50 +382,64 @@ body {
   .load {
     margin-left: 25%;
   }
+
   .weather {
     margin-left: -50px;
   }
+
   .inp {
     margin-left: -50px;
     margin-bottom: 3px;
   }
+
   .left-wr1 {
     text-align: center;
   }
+
   .country {
     margin: auto 0;
     margin-left: 20px;
   }
+
   .comma {
     margin: auto 0;
   }
+
   .temp {
     font-size: 70px;
     margin-top: 50px;
   }
+
   .details-title {
     font-size: 30px;
   }
+
   .details {
     font-size: 20px;
   }
+
   .wind-value {
     margin-left: -37px;
   }
+
   .line {
     width: 220px;
   }
+
   .press-value {
     margin-left: -7px;
   }
+
   .right-wr2 {
     margin-top: 50px;
     margin-left: -100px;
   }
+
   .left-wr2 {
     margin-left: -100px;
     margin-top: 50px;
   }
+
   .city,
   .comma,
   .country {
@@ -373,37 +449,46 @@ body {
   .weather {
     font-size: 30px;
   }
+
   .time {
     font-size: 20px;
   }
+
   .container-s1,
   .container-s2,
   .container-s3 {
     width: 600px;
   }
+
   .container-s1 {
     margin-left: 0;
   }
+
   .city-name-error {
     margin-left: 100px;
   }
 }
+
 @media (max-width: 700px) {
   .container-s1 {
     width: 500px;
     margin-left: 50px;
   }
+
   .city-name-error {
     margin-left: 100px;
   }
 }
+
 @media (max-width: 650px) {
   .load-text {
     margin-left: -70px;
   }
+
   .section-1 {
     height: 250px !important;
   }
+
   .city {
     margin-top: 0px !important;
   }
@@ -411,35 +496,44 @@ body {
   .icon {
     display: none;
   }
+
   .left-wr1 {
     margin: 0 auto;
   }
+
   .weather {
     margin: auto auto;
   }
+
   .container-s2 {
     flex-direction: column;
   }
+
   .right-wr2 {
     display: flex;
     align-items: center;
     margin: 0 auto;
     margin-top: 100px;
   }
+
   .left-wr2 {
     flex-direction: row-reverse;
     margin: auto auto;
     width: 300px;
   }
+
   .btns {
     margin-top: 20px;
   }
+
   .details-title {
     display: none;
   }
+
   .details {
     font-size: 30px;
   }
+
   .line {
     display: none;
   }
@@ -451,45 +545,58 @@ body {
     color: #ffffff;
     font-weight: bold;
   }
+
   .section-1 {
     height: 250px;
   }
+
   .section-2 {
     background: url(/bg-s2.jpg) no-repeat;
     background-size: cover;
   }
+
   .feels-like {
     font-weight: bold;
   }
+
   .wind-text {
     font-weight: bold;
   }
+
   .humidity {
     display: none;
   }
+
   .press {
     font-weight: bold;
   }
+
   .feel-value {
     font-weight: normal;
   }
+
   .wind-value {
     font-weight: normal;
     padding-left: 23px;
   }
+
   .press-value {
     font-weight: normal;
   }
+
   .section-3 {
     display: none;
   }
+
   .time-s1 {
     display: block;
   }
+
   .container-s1 {
     display: flex;
     flex-direction: column;
   }
+
   .line-s1 {
     display: block;
     margin: 10px auto;
@@ -499,132 +606,167 @@ body {
     border: none;
     width: 50px;
   }
+
   .inp {
     margin-top: 4px;
   }
+
   .city-name-error {
     margin-left: 100px;
     margin-top: 9px;
   }
+
   @media (max-height: 740px) {
     .left-wr1 {
       margin-top: -1px !important;
     }
+
     .right-wr2 {
       margin-bottom: 30px;
     }
   }
+
   @media (max-height: 640px) {
     .left-wr2 {
       margin-bottom: -70px;
     }
+
     .right-wr2 {
       margin-bottom: 10px;
     }
+
     .container-s2 {
       height: 330px;
     }
   }
 }
+
 @media (max-height: 1000px) {
   .container-s1 {
     margin-top: 20px;
   }
 }
+
 @media (max-width: 650px) {
   .switch {
     margin-left: 50px;
   }
+
   .btn-get {
     margin-top: 4px;
   }
+
   @media (max-height: 640px) {
     .right-wr2 {
       margin-top: 170px;
     }
   }
 }
+
 @media (max-width: 600px) {
   .container-s1 {
     width: 450px;
   }
+
   .container-s2 {
     width: 450px;
   }
+
   .container-s3 {
     width: 450px;
   }
+
   .time {
     width: 150px;
     margin: auto auto;
   }
 }
+
 @media (max-width: 500px) {
   .container-s1 {
     margin-left: 0;
   }
+
   .load-text {
     font-size: 25px;
     margin-top: 40px;
     margin-left: -50px;
   }
 }
+
 @media (max-width: 450px) {
   .left-wr2 {
     margin-left: 0;
     margin-left: 60px;
   }
+
   .right-wr2 {
     margin-left: 0;
     margin-left: 20px;
   }
+
   .feel-value {
     margin-left: 60px;
   }
+
   .wind-value {
     margin-left: 25px;
   }
+
   .press-value {
     margin-left: 55px;
   }
+
   .container-s1 {
     width: 400px;
   }
+
   .container-s2 {
     width: 400px;
   }
+
   .container-s3 {
     width: 400px;
   }
+
   .city-name-error {
     margin-left: 100px;
   }
 }
+
 @media (max-width: 400px) {
+
   .city,
   .comma,
   .country {
     font-size: 30px !important;
     line-height: 1em;
   }
+
   .feel-value {
     margin-left: 20px;
   }
+
   .wind-value {
     margin-left: -27px;
   }
+
   .press-value {
     margin-left: 10px;
   }
+
   .container-s1 {
     width: 350px;
   }
+
   .container-s2 {
     width: 350px;
   }
+
   .container-s3 {
     width: 350px;
   }
+
   .details {
     font-size: 25px;
   }
@@ -634,105 +776,135 @@ body {
     font-size: 12px;
     /* padding-top: 2px; */
   }
+
   .left-wr2 {
     margin-left: 15px;
   }
 }
+
 @media (max-width: 350px) {
   .load-text {
     display: none;
   }
+
   .load {
     margin-left: 50px;
   }
+
   .inp-btn {
     margin-right: -50px !important;
   }
+
   .place {
     margin-left: 70px;
   }
+
   .weather {
     margin-left: 81px;
   }
+
   .line-s1 {
     margin-right: 110px;
   }
+
   .time-s1 {
     margin-left: 30px;
   }
+
   .left-wr1 {
     margin-right: 20px;
   }
+
   .temp {
     font-size: 60px;
   }
+
   .container-s1 {
     width: 300px;
   }
+
   .container-s2 {
     width: 300px;
   }
+
   .container-s3 {
     width: 300px;
   }
+
   .feel-value {
     margin-left: -5px;
   }
+
   .wind-value {
     margin-left: -51px;
   }
+
   .press-value {
     margin-left: -11px;
   }
+
   .left-wr2 {
     margin-left: -10px;
   }
+
   .city-name-error {
     margin-left: 80px;
     margin-top: 9px;
   }
 }
+
 @media (max-width: 320px) {
   .temp {
     font-size: 50px;
   }
+
   .left-wr1 {
     margin-right: 50px;
   }
+
   .place {
     margin-left: 60px;
     margin-top: 12px;
   }
+
   .weather {
     margin-left: 110px;
     font-size: 20px;
     margin-top: 12px;
   }
+
   .line-s1 {
     margin-left: 130px;
   }
+
   .time-s1 {
     margin-right: 20px;
   }
+
   .city-name-error {
     margin-left: 80px;
   }
+
   @media (max-height: 640px) {
     .right-wr2 {
       margin-top: 180px !important;
     }
+
     .left-wr2 {
       margin-top: 10px;
     }
+
     .details {
       margin-top: -50px;
     }
   }
+
   @media (max-height: 580px) {
     .right-wr2 {
       margin-bottom: 40px;
     }
   }
+
   @media (max-height: 860px) {
     .right-wr2 {
       margin-top: 120px;
@@ -747,39 +919,49 @@ body {
     }
   }
 }
+
 @media (max-width: 300px) {
   .inp {
     /* margin-left: 23px; */
     /* margin-right: -15px; */
     width: 190px;
   }
+
   .btn-get {
     margin-left: 2px !important;
     /* left: 73%; */
   }
+
   .city-name-error {
     margin-left: 60px;
   }
+
   .inp-btn {
     margin-left: -30px;
   }
+
   .place {
     margin-left: 25px;
   }
+
   .weather {
     margin-left: 28px;
   }
+
   .line-s1 {
     margin-left: 110px;
   }
+
   .load {
     margin-left: 30px;
   }
+
   .city,
   .comma,
   .country {
     font-size: 25px !important;
   }
+
   .left-wr1 {
     padding-left: 30px;
     margin: 0 !important;
@@ -792,9 +974,11 @@ body {
     margin: auto auto;
     margin-top: 45px;
   }
+
   .container-s2 {
     width: 270px;
   }
+
   .container-s3 {
     width: 270px;
   }
@@ -802,16 +986,20 @@ body {
   .wind-value {
     margin-left: -63px;
   }
+
   .press-value {
     margin-left: -15px;
   }
+
   .details {
     font-size: 20px;
   }
+
   .left-wr2 {
     margin-left: -40px;
   }
 }
+
 /*switcher */
 /* The switch - the box around the slider */
 .switch {
@@ -854,15 +1042,15 @@ body {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #333333;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #9fd4ff;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
