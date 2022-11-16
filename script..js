@@ -1,9 +1,14 @@
 let btnGet = document.querySelector(".btn-get");
 let btnFahr = document.querySelector(".fahr");
 let btnCels = document.querySelector(".cels");
+let chbox = document.querySelector('#chboxid');
 
 const BASE_URL = 'https://api.openweathermap.org';
 const API_KEY = '655fdcf1aed1280abf8e870e95b28149';
+
+
+
+
 
 const getWeather = (cityName) => {
     if (cityName) {
@@ -59,7 +64,9 @@ const getWeather = (cityName) => {
                     }
                 });
 
-
+                if (chbox.checked = true) {
+                    chbox.checked = false;
+                }
 
                 //    -----------------------------------------------------------
                 // ask Joseph
