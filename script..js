@@ -32,17 +32,37 @@ const getWeather = (cityName) => {
                 document.querySelector(".press-value").innerHTML =
                     data.main.pressure + " hPa";
 
+
+
+                // if (cityName == 'Saint Petersburg' || cityName == 'Санкт Петербург' || cityName == 'saint petersburg' || cityName == 'санкт петербург') {
+                //     document.querySelector('.city').textContent = "Saint P."
+                // } else if (cityName == 'New York' || cityName == 'new york') {
+                //     document.querySelector('.city').textContent = "New Y."
+                // } else if (cityName == 'Los Angeles' || cityName == 'Los angeles' || cityName == 'los angeles') {
+                //     document.querySelector('.city').textContent = "Los Ang."
+                // } else {
+                //     document.querySelector(".city").textContent = data.name;
+                // }
+
                 document.querySelector(".city").textContent = data.name;
                 document.querySelector(".country").textContent = data.sys.country;
                 document.querySelector(".weather").textContent = data.weather[0]["description"];
 
-                if (cityName.length > 13) {
-                    document.querySelector(".city").style.fontSize = "30px";
-                    document.querySelector(".city").style.marginTop = "30px";
-                } else {
-                    document.querySelector(".city").style.fontSize = "60px";
-                    document.querySelector(".city").style.marginTop = "0px";
+                if (/[\s]/gi.test(document.querySelector(".city").textContent) && cityName.length >= 8) {
+                    var cityText = document.querySelector(".city");
+                    var indOfSpace = cityText.textContent.indexOf(' ');
+                    cityText.textContent = cityText.textContent.slice(0, indOfSpace) + cityText.textContent.slice(indOfSpace, indOfSpace + 2) + '.';
                 }
+
+
+                // if (cityName.length > 13) {
+                // document.querySelector(".city").textContent = data.name.slice(0, 5);
+                // document.querySelector(".city").style.fontSize = "30px";
+                // document.querySelector(".city").style.marginTop = "30px";
+                // } else {
+                //     document.querySelector(".city").style.fontSize = "60px";
+                //     document.querySelector(".city").style.marginTop = "0px";
+                // }
 
                 let val = `http://openweathermap.org/img/wn/${data.weather[0]["icon"]}@2x.png`;
                 $("#icon").attr("src", val);
