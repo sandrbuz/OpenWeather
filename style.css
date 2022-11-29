@@ -742,6 +742,8 @@ body {
   .country {
     font-size: 30px !important;
     line-height: 1em;
+    margin-left: 10px;
+    /* added for display beauty on smartphones */
   }
 
   .feel-value {
