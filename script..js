@@ -19,6 +19,7 @@ const getWeather = (cityName) => {
             .then((resp) => resp.json())
             .then((data) => {
                 document.querySelector(".city-name-error").textContent = "";
+                // document.querySelector(".city-name-error").style.display = "none";
                 document.querySelector(".filter").style.display = "none";
 
                 document.querySelector(".temp").innerHTML =
@@ -50,23 +51,23 @@ const getWeather = (cityName) => {
 
                 // css for section 1
 
-                if(document.querySelector('.weather').textContent.length <= 12){
-                    const sheet = new CSSStyleSheet();
-                    sheet.insertRule(`@media (max-width: 350px) {
-                        .weather {
-                          margin-left: 100px !important;
-                        }
-                    }`);
-                      document.adoptedStyleSheets = [sheet];
-                } else {
-                    const sheet = new CSSStyleSheet();
-                    sheet.insertRule(`@media (max-width: 350px) {
-                        .weather {
-                          margin-left: 68px;
-                        }
-                    }`);
-                      document.adoptedStyleSheets = [sheet];
-                }
+                // if(document.querySelector('.weather').textContent.length <= 12){
+                //     const sheet = new CSSStyleSheet();
+                //     sheet.insertRule(`@media (max-width: 350px) {
+                //         .weather {
+                //           margin-left: 100px !important;
+                //         }
+                //     }`);
+                //       document.adoptedStyleSheets = [sheet];
+                // } else {
+                //     const sheet = new CSSStyleSheet();
+                //     sheet.insertRule(`@media (max-width: 350px) {
+                //         .weather {
+                //           margin-left: 68px;
+                //         }
+                //     }`);
+                //       document.adoptedStyleSheets = [sheet];
+                // }
 
                 if (/[\s]/gi.test(document.querySelector(".city").textContent) && cityName.length >= 8) {
                     var cityText = document.querySelector(".city");
@@ -177,9 +178,11 @@ const getWeather = (cityName) => {
                 // ------------------------------------------------------------------------
             })
             .catch(function () {
+                // document.querySelector(".city-name-error").style.display = "block";
                 document.querySelector(".city-name-error").textContent = "Not found";
             });
     } else {
+        // document.querySelector(".city-name-error").style.display = "block";
         document.querySelector(".city-name-error").textContent = "Bad request";
     }
 };
