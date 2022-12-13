@@ -92,6 +92,8 @@ body {
   flex-direction: column;
   margin: auto auto;
   margin-right: 230px;
+  width: 310px;
+  white-space: nowrap;
 }
 
 .section-1 {
@@ -380,6 +382,10 @@ body {
 }
 
 @media (max-width: 750px) {
+  .place {
+    padding-left: 50px;
+  }
+
   .load {
     margin-left: 25%;
   }
@@ -466,7 +472,7 @@ body {
   }
 
   .city-name-error {
-    margin-left: 100px;
+    margin-left: 140px;
   }
 }
 
@@ -477,7 +483,7 @@ body {
   }
 
   .city-name-error {
-    margin-left: 100px;
+    margin-left: 120px;
   }
 }
 
@@ -613,7 +619,7 @@ body {
   }
 
   .city-name-error {
-    margin-left: 100px;
+    margin-left: 140px;
     margin-top: 9px;
   }
 
@@ -731,7 +737,7 @@ body {
   }
 
   .city-name-error {
-    margin-left: 100px;
+    margin-left: 140px;
   }
 }
 
@@ -787,7 +793,7 @@ body {
   }
 
   .city-name-error {
-    margin-left: 80px;
+    margin-left: 140px;
     font-size: 12px;
     /* padding-top: 2px; */
   }
@@ -812,11 +818,13 @@ body {
   }
 
   .place {
-    margin-left: 70px;
+    margin-left: 40px;
+    white-space: nowrap;
   }
 
   .weather {
     margin-left: 68px;
+    white-space: nowrap;
     /* added for display beauty on smartphones */
   }
 
@@ -833,6 +841,8 @@ body {
   .left-wr1 {
     margin-right: 20px;
     margin-left: -20px;
+    width: 290px;
+    text-align: center;
   }
 
   .temp {
@@ -868,7 +878,7 @@ body {
   }
 
   .city-name-error {
-    margin-left: 80px;
+    margin-left: 150px;
     margin-top: 9px;
   }
 }
@@ -884,16 +894,16 @@ body {
   }
 
   .left-wr1 {
-    margin-right: 50px;
+    margin-right: 40px;
   }
 
   .place {
-    margin-left: 60px;
+    margin-left: 20px;
     margin-top: 12px;
   }
 
   .weather {
-    margin-left: 100px;
+    margin-left: 100px !important;
     font-size: 20px;
     margin-top: 12px;
   }
@@ -907,7 +917,7 @@ body {
   }
 
   .city-name-error {
-    margin-left: 80px;
+    margin-left: 140px;
   }
 
   @media (max-height: 640px) {
@@ -958,7 +968,7 @@ body {
   }
 
   .city-name-error {
-    margin-left: 60px;
+    margin-left: 100px;
   }
 
   .inp-btn {
@@ -966,11 +976,11 @@ body {
   }
 
   .place {
-    margin-left: 25px;
+    margin-left: -30px;
   }
 
   .weather {
-    margin-left: 28px;
+    margin-left: 28px !important;
   }
 
   .line-s1 {
@@ -992,6 +1002,7 @@ body {
     margin: 0 !important;
     margin-top: -40px !important;
     margin-right: 50px !important;
+    width: 200px;
   }
 
   .container-s1 {

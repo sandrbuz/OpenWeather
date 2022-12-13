@@ -48,10 +48,34 @@ const getWeather = (cityName) => {
                 document.querySelector(".country").textContent = data.sys.country;
                 document.querySelector(".weather").textContent = data.weather[0]["description"];
 
+                // css for section 1
+
+                if(document.querySelector('.weather').textContent.length <= 12){
+                    const sheet = new CSSStyleSheet();
+                    sheet.insertRule(`@media (max-width: 350px) {
+                        .weather {
+                          margin-left: 100px !important;
+                        }
+                    }`);
+                      document.adoptedStyleSheets = [sheet];
+                } else {
+                    const sheet = new CSSStyleSheet();
+                    sheet.insertRule(`@media (max-width: 350px) {
+                        .weather {
+                          margin-left: 68px;
+                        }
+                    }`);
+                      document.adoptedStyleSheets = [sheet];
+                }
+
                 if (/[\s]/gi.test(document.querySelector(".city").textContent) && cityName.length >= 8) {
                     var cityText = document.querySelector(".city");
                     var indOfSpace = cityText.textContent.indexOf(' ');
                     cityText.textContent = cityText.textContent.slice(0, indOfSpace) + cityText.textContent.slice(indOfSpace, indOfSpace + 2) + '.';
+                } 
+                if(document.querySelector(".city").textContent.length >= 10){
+                    var cityText = document.querySelector(".city");
+                    cityText.textContent = cityText.textContent.slice(0, 7)
                 }
 
 
